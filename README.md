@@ -38,4 +38,4 @@ A visualização dos médicos em atendimento permite aos usuários da recepção
 
 ## Vídeo
 
-[Clique aqui para ver o vídeo do programa](INSERIR_LINK_DO_VIDEO)
+[Clique aqui para ver o vídeo do programa](https://youtu.be/smePzSZlvrA?si=eMVpN4JU6I7Fs7R7)
