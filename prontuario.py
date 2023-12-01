@@ -107,9 +107,57 @@ while sair != 0:
             else:
                 print("Prontuário não Cadastrado")
 
-    # PEDRO OPCOES 5 E 6
-'''    elif opcao == 5:
-    elif opcao == 6:'''
+    elif opcao == 5:
+        print("Você selecionou: Visualizar Médicos Disponíveis")
+        medicos_disponiveis = [
+            {"nome": "Dr. João Camargo", "crm": "17335", "area_atuacao": "Clínica Geral"},
+            {"nome": "Dra. Maria Alves", "crm": "67890", "area_atuacao": "Cardiologia"},
+            {"nome": "Dr. Carlos Zamago", "crm": "54321", "area_atuacao": "Dermatologia"},
+            {"nome": "Dra. Ana Nardelli", "crm": "98765", "area_atuacao": "Pediatria"},
+            {"nome": "Dra. Laura Padial", "crm": "45678", "area_atuacao": "Ortopedia"},
+            {"nome": "Dr. Pedro Gandor", "crm": "23456", "area_atuacao": "Ginecologia"},
+            {"nome": "Dra. Fernanda paif", "crm": "78901", "area_atuacao": "Neurologia"},
+            {"nome": "Dr. Ricardo Gourlat", "crm": "56789", "area_atuacao": "Oftalmologia"},
+            {"nome": "Dra. Camila Silva", "crm": "34567", "area_atuacao": "Urologia"},
+            {"nome": "Dr. André jr", "crm": "89012", "area_atuacao": "Endocrinologia"},
+            {"nome": "Dra. Luiza betchold", "crm": "67890", "area_atuacao": "Cardiologia"},
+            {"nome": "Dr. Guilherme bocallini", "crm": "12345", "area_atuacao": "Clínica Geral"},
+        ]
+        print("Médicos Disponíveis:")
+        for medico in medicos_disponiveis:
+            print("-=" * 30)
+            print(f"MÉDICO\n"
+                  f"NOME: {medico['nome']}\n"
+                  f"CRM: {medico['crm']}\n"
+                f"ÁREA DE ATUAÇÃO: {medico['area_atuacao']}")
+            print("-=" * 30)
+
+    elif opcao == 6:
+        print("Você selecionou: Visualizar Médicos Disponíveis e em Atendimento")
+
+        medicos = [
+            {"nome": "Dr. João Camargo", "crm": "17335", "area_atuacao": "Clínica Geral", "em_atendimento": True},
+            {"nome": "Dra. Maria Alves", "crm": "67890", "area_atuacao": "Cardiologia", "em_atendimento": False},
+            {"nome": "Dr. Carlos Zamago", "crm": "54321", "area_atuacao": "Dermatologia", "em_atendimento": True},
+            {"nome": "Dra. Ana Nardelli", "crm": "98765", "area_atuacao": "Pediatria", "em_atendimento": False},
+            {"nome": "Dra. Laura Padial", "crm": "45678", "area_atuacao": "Ortopedia", "em_atendimento": True},
+            {"nome": "Dr. Pedro Gandor", "crm": "23456", "area_atuacao": "Ginecologia", "em_atendimento": False},
+            {"nome": "Dra. Fernanda Paif", "crm": "78901", "area_atuacao": "Neurologia", "em_atendimento": True},
+            {"nome": "Dr. Ricardo Gourlat", "crm": "56789", "area_atuacao": "Oftalmologia", "em_atendimento": False},
+            {"nome": "Dra. Camila Silva", "crm": "34567", "area_atuacao": "Urologia", "em_atendimento": True},
+            {"nome": "Dr. André Jr", "crm": "89012", "area_atuacao": "Endocrinologia", "em_atendimento": False},
+            {"nome": "Dra. Luiza Betchold", "crm": "67890", "area_atuacao": "Cardiologia", "em_atendimento": True},
+            {"nome": "Dr. Guilherme Bocallini", "crm": "12345", "area_atuacao": "Clínica Geral", "em_atendimento": False},
+        ]
+    print("Médicos Disponíveis:")
+    for medico in medicos:
+                print("-=" * 30)
+                print(f"MÉDICO\n"
+                f"NOME: {medico['nome']}\n"
+                f"CRM: {medico['crm']}\n"
+                f"ÁREA DE ATUAÇÃO: {medico['area_atuacao']}\n"
+                f"STATUS DE ATENDIMENTO: {'Em Atendimento' if medico['em_atendimento'] else 'Disponível'}")
+                print("-=" * 30)
 
     sair = int(input("Deseja finalizar o programa? (1 - NÃO | 0 - SIM) "))
     print("Obrigado pela preferência de utilizar o Prontuário Eletrônico by Adaptive Dialogs")
